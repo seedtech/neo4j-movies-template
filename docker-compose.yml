@@ -1,0 +1,9 @@
+version: '2'
+services:
+  db:
+    build: .
+    command: [./start.sh]
+    ports:
+        - "7474:7474"
+    volumes:    
+        - ./data:/data/
